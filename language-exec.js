@@ -8,7 +8,7 @@ var command = require('language-command');
  *
  * @param {String}   language
  * @param {String}   file
- * @param {String}   args
+ * @param {Array}    args
  * @param {Object}   opts
  * @param {Function} done
  */
@@ -24,6 +24,12 @@ module.exports = function (language, file, args, opts, done) {
   if (typeof opts === 'function') {
     done = opts;
     opts = null;
+  }
+
+  // Reverse options and arguments.
+  if (typeof args === 'object' && !Array.isArray(args)) {
+    opts = args;
+    args = null;
   }
 
   var cmd = command(language, file, args);
