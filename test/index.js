@@ -54,20 +54,4 @@ describe('language-exec', function () {
       });
     });
   });
-
-  describe('options', function () {
-    it('should execute with an options object', function (done) {
-      var cwd  = path.join(__dirname, '..');
-      var file = path.join(__dirname, 'fixtures', 'JavaScript.js');
-
-      return exec('JavaScript', file, null, {
-        cwd: cwd
-      }, function (err, stdout, stderr) {
-        assert.ok(!stderr);
-        assert.equal(stdout, cwd + '\n');
-
-        return done(err);
-      });
-    });
-  });
 });
