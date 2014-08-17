@@ -1,6 +1,6 @@
 {
   "name": "language-exec",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Execute a file in any programming language.",
   "main": "language-exec.js",
   "scripts": {
