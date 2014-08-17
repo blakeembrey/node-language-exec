@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/blakeembrey/node-language-exec",
   "devDependencies": {
-    "mocha": "^1.18.2",
-    "istanbul": "^0.2.6"
+    "istanbul": "^0.3.0",
+    "mocha": "^1.18.2"
   },
   "dependencies": {
-    "language-command": "^0.1.0",
-    "xtend": "^2.2.0"
+    "language-command": "^1.0.0",
+    "xtend": "^4.0.0"
   }
 }
